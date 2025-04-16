@@ -3,7 +3,6 @@
 
 #include <Arduino.h>
 
-// Définitions des types de clics
 #define MYBUTTON_NO_CLICK 0
 #define MYBUTTON_SHORT_CLICK 2
 #define MYBUTTON_LONG_CLICK 3
@@ -12,17 +11,17 @@
 // Classe pour gérer un bouton avec debounce, appui long et double-clic
 class MyButton {
 private:
-    int buttonGPIO;                    // Numéro du GPIO
-    int buttonDebounceDelay;           // Délai anti-rebond
-    int buttonLongPressDuration;       // Durée pour appui long
-    int buttonDoubleClickMaxDelay;     // Délai max pour double-clic
-    bool isPressed;                    // État actuel du bouton
-    bool lastRawState;                 // Dernier état lu
-    unsigned long lastDebounceTime;    // Temps dernier changement
-    unsigned long pressStart;          // Temps début appui
-    unsigned long lastReleaseTime;     // Temps dernier relâchement
-    bool waitingSecondClick;           // Attente double-clic
-    bool pendingSingleClick;           // Clic simple en attente de confirmation
+    int buttonGPIO;                   
+    int buttonDebounceDelay;           
+    int buttonLongPressDuration;       
+    int buttonDoubleClickMaxDelay;     
+    bool isPressed;                  
+    bool lastRawState;                 
+    unsigned long lastDebounceTime;   
+    unsigned long pressStart;          
+    unsigned long lastReleaseTime;     
+    bool waitingSecondClick;           
+    bool pendingSingleClick;          
 
 public:
     //Constructeur de la classe MyButton
