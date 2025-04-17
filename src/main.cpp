@@ -14,7 +14,7 @@ MyButton myButton(GPIO_BUTTON_TO_USE, INPUT_PULLDOWN);
 void setup()
 {
     Serial.begin(9600);
-    Serial.println(F("\nExemple d'utilisation d'un bouton avec la classe MyButton"));    
+    Serial.println(F("\nExemple d'utilisation de MyButton"));
 }
 
 void loop()
