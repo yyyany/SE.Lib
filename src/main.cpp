@@ -8,13 +8,13 @@ const int GPIO_BUTTON_TO_USE = 15;
 #define MYBUTTON_LONG_CLICK 3
 #define MYBUTTON_DOUBLE_CLICK 4
 
-// Création d'une instance de MyButton
+// Création d'une instance de MyButtonn
 MyButton myButton(GPIO_BUTTON_TO_USE, INPUT_PULLDOWN);
 
 void setup()
 {
     Serial.begin(9600);
-    Serial.println(F("\nExemple d'utilisation d'un bouton avec la classe MyButton"));
+    Serial.println(F("\nExemple d'utilisation d'un bouton avec la classe MyButton"));    
 }
 
 void loop()
